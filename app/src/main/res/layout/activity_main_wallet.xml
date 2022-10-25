@@ -26,6 +26,7 @@
             android:layout_height="wrap_content"
             android:ellipsize="middle"
             android:singleLine="true"
+            android:textColor="@color/my_pink_light"
             android:textSize="16sp"
             tools:text="Connected Adress: 0xAAA...AAA" />
 
@@ -33,9 +34,9 @@
             android:id="@+id/textViewSepetToplam"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="12dp"
+            android:layout_margin="30dp"
             android:text="@string/sepet_toplam"
-            android:textColor="#000000"
+            android:textColor="@color/my_pink_dark"
             android:textSize="20sp"
             android:textStyle="bold" />
 
@@ -46,7 +47,7 @@
             android:layout_margin="12dp"
             android:text="@string/total_payment"
             android:textAlignment="center"
-            android:textColor="#000000"
+            android:textColor="@color/my_pink_dark"
             android:textSize="20sp"
             android:textStyle="bold" />
 
@@ -56,7 +57,7 @@
             android:layout_height="wrap_content"
             android:text="@string/ethereum"
             android:textAlignment="center"
-            android:textColor="#000000"
+            android:textColor="@color/my_pink_dark"
             android:textSize="20sp"
             android:textStyle="bold" />
 
@@ -66,7 +67,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="12dp"
+            android:layout_marginTop="100dp"
             android:padding="16dp"
             android:text="@string/perform_transaction" />
     </LinearLayout>

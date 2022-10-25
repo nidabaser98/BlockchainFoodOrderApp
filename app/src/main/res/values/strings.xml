@@ -5,7 +5,7 @@
     <string name="to_address_hint">Address (0xAAA...AAA)</string>
     <string name="transaction_value_hint">Value (0.01 ETH)</string>
     <string name="perform_transaction">Ödemeyi Onayla</string>
-    <string name="sepet_toplam">Sepet Toplamı: </string>
+    <string name="sepet_toplam">Sepet Toplamınız: </string>
     <string name="total_payment">0.01 ETH</string>
     <string name="ethereum">ETHEREUM</string>
 </resources>

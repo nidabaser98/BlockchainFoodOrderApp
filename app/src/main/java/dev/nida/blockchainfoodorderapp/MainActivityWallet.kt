@@ -87,7 +87,7 @@ class MainActivityWallet : AppCompatActivity(R.layout.activity_main_wallet) {
                     .onSuccess {
 
 
-                        showMessage("Transaction done!")
+                        showMessage("İŞLEM BAŞARILI !")
 
 
 
@@ -102,6 +102,8 @@ class MainActivityWallet : AppCompatActivity(R.layout.activity_main_wallet) {
     }
 
     private fun showMessage(message: String) {
-        Snackbar.make(binding.root, message, Snackbar.LENGTH_SHORT).show()
+        Snackbar.make(binding.root, message, Snackbar.LENGTH_SHORT)
+            .setAnchorView(binding.performTransactionView)
+            .show()
     }
 }
