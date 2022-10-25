@@ -19,7 +19,7 @@ class HomeFragment : Fragment() {
     private lateinit var adapter: FoodsAdapter
     private lateinit var viewModel: HomeFragmentViewModel
 
-    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View {
 
         tasarim = DataBindingUtil.inflate(inflater, R.layout.fragment_home, container, false)
 

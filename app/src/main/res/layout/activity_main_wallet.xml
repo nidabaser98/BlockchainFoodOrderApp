@@ -26,34 +26,39 @@
             android:layout_height="wrap_content"
             android:ellipsize="middle"
             android:singleLine="true"
-            tools:text="Connected with: 0xAAA...AAA" />
+            android:textSize="16sp"
+            tools:text="Connected Adress: 0xAAA...AAA" />
 
-        <com.google.android.material.textfield.TextInputLayout
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        <TextView
+            android:id="@+id/textViewSepetToplam"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="12dp"
-            android:hint="@string/to_address_hint">
+            android:layout_margin="12dp"
+            android:text="@string/sepet_toplam"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/toAddressView"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <com.google.android.material.textfield.TextInputLayout
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        <TextView
+            android:id="@+id/totalPaymentTextView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="12dp"
-            android:hint="@string/transaction_value_hint">
+            android:layout_margin="12dp"
+            android:text="@string/total_payment"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/valueView"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:inputType="numberDecimal" />
-        </com.google.android.material.textfield.TextInputLayout>
+        <TextView
+            android:id="@+id/txtEthereum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/ethereum"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/performTransactionView"

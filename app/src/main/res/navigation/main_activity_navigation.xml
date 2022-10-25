@@ -52,6 +52,9 @@
         <argument
             android:name="sepeteYemek"
             app:argType="dev.nida.blockchainfoodorderapp.entity.SepetYemekler" />
+        <action
+            android:id="@+id/actBasketToWallet"
+            app:destination="@id/mainActivityWallet"/>
     </fragment>
     <fragment
         android:id="@+id/orderOkayFragment"
@@ -64,4 +67,10 @@
             app:popUpTo="@id/homeFragment"
             app:popUpToInclusive="true" />
     </fragment>
+    <activity
+        android:id="@+id/mainActivityWallet"
+        android:name="dev.nida.blockchainfoodorderapp.MainActivityWallet"
+        android:label="MainActivityWallet"
+        tools:layout="@layout/activity_main_wallet">
+    </activity>
 </navigation>

@@ -1,6 +1,7 @@
 package dev.nida.blockchainfoodorderapp
 
 import android.os.Bundle
+import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
@@ -30,6 +31,12 @@ class MainActivityWallet : AppCompatActivity(R.layout.activity_main_wallet) {
         binding = ActivityMainWalletBinding.inflate(layoutInflater)
         setContentView(binding.root)
         initViews()
+
+        //INTENT
+        val payment = intent.getStringExtra("key")
+        Log.d("payEther","Ethereum Payment Total: $payment")
+        binding.totalPaymentTextView.text = "$payment"
+
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
@@ -60,6 +67,7 @@ class MainActivityWallet : AppCompatActivity(R.layout.activity_main_wallet) {
         connectedView.visibility = View.VISIBLE
         connectedAddressView.text = getString(R.string.connected_with, address)
         invalidateOptionsMenu()
+
     }
 
     private fun onDisconnected() = with(binding) {
@@ -70,11 +78,20 @@ class MainActivityWallet : AppCompatActivity(R.layout.activity_main_wallet) {
 
     private fun initPerformTransactionView() = with(binding) {
         performTransactionView.setOnClickListener {
-            val toAddress = toAddressView.text.toString()
-            val value = valueView.text.toString()
+
+            val toAddress = "0xb1CaE78813395082cEd4CF4df99Be6f5B58331F3" //toAddressView.text.toString()
+            val value = totalPaymentTextView.text.toString()   //valueView.text.toString()
+
             lifecycleScope.launch {
                 runCatching { walletConnectKit.performTransaction(toAddress, value) }
-                    .onSuccess { showMessage("Transaction done!") }
+                    .onSuccess {
+
+
+                        showMessage("Transaction done!")
+
+
+
+                    }
                     .onFailure { showMessage(it.message ?: it.toString()) }
             }
         }
