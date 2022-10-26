@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -10,7 +11,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:contentDescription="@string/app_name" />
+        android:contentDescription="@string/app_name"
+        tools:ignore="ImageContrastCheck" />
 
     <LinearLayout
         android:id="@+id/connectedView"
@@ -24,31 +26,21 @@
             android:id="@+id/connectedAddressView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_margin="30dp"
             android:ellipsize="middle"
             android:singleLine="true"
-            android:textColor="@color/my_pink_light"
+            android:textColor="#D81B60"
             android:textSize="16sp"
             tools:text="Connected Adress: 0xAAA...AAA" />
-
-        <TextView
-            android:id="@+id/textViewSepetToplam"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="30dp"
-            android:text="@string/sepet_toplam"
-            android:textColor="@color/my_pink_dark"
-            android:textSize="20sp"
-            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/totalPaymentTextView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="12dp"
             android:text="@string/total_payment"
             android:textAlignment="center"
             android:textColor="@color/my_pink_dark"
-            android:textSize="20sp"
+            android:textSize="34sp"
             android:textStyle="bold" />
 
         <TextView
@@ -58,8 +50,26 @@
             android:text="@string/ethereum"
             android:textAlignment="center"
             android:textColor="@color/my_pink_dark"
-            android:textSize="20sp"
-            android:textStyle="bold" />
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textViewSepetToplam"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:fontFamily="sans-serif"
+            android:text="@string/sepet_toplam"
+            android:textAlignment="center"
+            android:textColor="@color/my_pink_dark"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/imgViewConfirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/app_name"
+            app:srcCompat="@drawable/confirm"
+            tools:ignore="ImageContrastCheck" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/performTransactionView"
@@ -67,8 +77,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="100dp"
+            android:layout_margin="10dp"
             android:padding="16dp"
-            android:text="@string/perform_transaction" />
+            android:text="@string/perform_transaction"
+            app:cornerRadius="10dp"
+            app:strokeColor="@color/my_pink_dark"
+            app:strokeWidth="1dp" />
     </LinearLayout>
 </RelativeLayout>

@@ -64,6 +64,7 @@ class MainActivityWallet : AppCompatActivity(R.layout.activity_main_wallet) {
 
     private fun onConnected(address: String) = with(binding) {
         walletConnectButton.visibility = View.GONE
+        imgViewConfirm.visibility = View.GONE
         connectedView.visibility = View.VISIBLE
         connectedAddressView.text = getString(R.string.connected_with, address)
         invalidateOptionsMenu()
@@ -73,6 +74,7 @@ class MainActivityWallet : AppCompatActivity(R.layout.activity_main_wallet) {
     private fun onDisconnected() = with(binding) {
         walletConnectButton.visibility = View.VISIBLE
         connectedView.visibility = View.GONE
+        imgViewConfirm.visibility = View.GONE
         invalidateOptionsMenu()
     }
 
@@ -86,10 +88,11 @@ class MainActivityWallet : AppCompatActivity(R.layout.activity_main_wallet) {
                 runCatching { walletConnectKit.performTransaction(toAddress, value) }
                     .onSuccess {
 
-
+                        imgViewConfirm.visibility = View.VISIBLE
                         showMessage("İŞLEM BAŞARILI !")
-
-
+                        textViewSepetToplam.visibility = View.GONE
+                        totalPaymentTextView.visibility = View.GONE
+                        txtEthereum.visibility = View.GONE
 
                     }
                     .onFailure { showMessage(it.message ?: it.toString()) }

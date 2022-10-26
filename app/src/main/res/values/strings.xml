@@ -2,10 +2,10 @@
     <string name="app_name">Blockchain Food Order App</string>
     <string name="disconnect">Disconnect</string>
     <string name="connected_with">Connected with: %s</string>
-    <string name="to_address_hint">Address (0xAAA...AAA)</string>
+    <string name="to_address_hint">Address (0xAAA…AAA)</string>
     <string name="transaction_value_hint">Value (0.01 ETH)</string>
     <string name="perform_transaction">Ödemeyi Onayla</string>
-    <string name="sepet_toplam">Sepet Toplamınız: </string>
+    <string name="sepet_toplam">Ödemeyi onayladıktan sonra kripto cüzdanınıza bağlanmasını bekleyin ve işlemi onaylayın.</string>
     <string name="total_payment">0.01 ETH</string>
-    <string name="ethereum">ETHEREUM</string>
+    <string name="ethereum">Ethereum</string>
 </resources>
