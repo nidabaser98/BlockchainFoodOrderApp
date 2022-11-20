@@ -15,7 +15,7 @@ class LoginFragment : Fragment() {
         tasarim = FragmentLoginBinding.inflate(inflater, container, false)
 
         tasarim.btnLogin.setOnClickListener {
-                Navigation.findNavController(it).navigate(R.id.actLoginToHome)
+                Navigation.findNavController(it).navigate(R.id.actLoginToUser)
         }
 
         return tasarim.root

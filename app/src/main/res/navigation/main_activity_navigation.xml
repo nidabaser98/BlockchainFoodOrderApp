@@ -10,8 +10,8 @@
         android:label="fragment_login"
         tools:layout="@layout/fragment_login" >
         <action
-            android:id="@+id/actLoginToHome"
-            app:destination="@id/homeFragment" />
+            android:id="@+id/actLoginToUser"
+            app:destination="@id/userLoginFragment" />
     </fragment>
     <fragment
         android:id="@+id/homeFragment"
@@ -73,4 +73,13 @@
         android:label="MainActivityWallet"
         tools:layout="@layout/activity_main_wallet">
     </activity>
+    <fragment
+        android:id="@+id/userLoginFragment"
+        android:name="dev.nida.blockchainfoodorderapp.fragment.UserLoginFragment"
+        android:label="UserLoginFragment"
+        tools:layout="@layout/fragment_user_login">
+        <action
+            android:id="@+id/actLoginToHome"
+            app:destination="@id/homeFragment" />
+    </fragment>
 </navigation>

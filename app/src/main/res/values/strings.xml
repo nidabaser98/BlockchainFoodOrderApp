@@ -8,4 +8,12 @@
     <string name="sepet_toplam">Ödemeyi onayladıktan sonra kripto cüzdanınıza bağlanmasını bekleyin ve işlemi onaylayın.</string>
     <string name="total_payment">0.01 ETH</string>
     <string name="ethereum">Ethereum</string>
+    <string name="userMail">E-posta adresiniz</string>
+    <string name="userPassword">Şifreniz</string>
+    <string name="KullanıcıGiris">GİRİŞ</string>
+    <string name="Required">Gerekli</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="ınvalid">Lütfen e-posta adresinizi ve şifrenizi girin</string>
+
 </resources>
