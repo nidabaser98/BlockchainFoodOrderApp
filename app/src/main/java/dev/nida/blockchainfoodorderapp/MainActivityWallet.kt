@@ -19,9 +19,10 @@ class MainActivityWallet : AppCompatActivity(R.layout.activity_main_wallet) {
 
     private val config = WalletConnectKitConfig(
         context = this,
+        //bridgeUrl = "wss://relay.walletconnect.com",
         bridgeUrl = "wss://bridge.aktionariat.com:8887",
         appUrl = "walletconnectkit.com",
-        appName = "WalletConnectKit",
+        appName = "BlockchainFoodOrderApp",
         appDescription = "WalletConnectKit is toolkit for WalletConnect!"
     )
     private val walletConnectKit by lazy { WalletConnectKit.Builder(config).build() }
