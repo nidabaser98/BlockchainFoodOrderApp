@@ -21,9 +21,9 @@ class MainActivityWallet : AppCompatActivity(R.layout.activity_main_wallet) {
         context = this,
         //bridgeUrl = "wss://relay.walletconnect.com",
         bridgeUrl = "wss://bridge.aktionariat.com:8887",
-        appUrl = "walletconnectkit.com",
-        appName = "BlockchainFoodOrderApp",
-        appDescription = "WalletConnectKit is toolkit for WalletConnect!"
+        appUrl = "nida.kotlin.dapp.walletconnect",
+        appName = "Nida-BlockchainFoodOrderApp",
+        appDescription = "Nida Baser YL tez projesi"
     )
     private val walletConnectKit by lazy { WalletConnectKit.Builder(config).build() }
 
