@@ -1,5 +1,5 @@
 # BlockchainFoodOrderApp
-Blockchain Food Order App
+Computer Science Master Thesis Dissertation Project
 
 | ![s7 kripto ödeme connect to wallet](https://github.com/nidabaser98/BlockchainFoodOrderApp/assets/116282473/7c05c7d1-0621-4376-85d9-8bac03ffb8a7) | ![s8 kripto ödeme login wallet](https://github.com/nidabaser98/BlockchainFoodOrderApp/assets/116282473/1ba8823d-f808-47f0-8292-93f21cf89eb6) | ![s9 kripto ödeme bu siteye bağlan](https://github.com/nidabaser98/BlockchainFoodOrderApp/assets/116282473/2cf95288-64c1-4677-a2e8-1e4966ae5941) | ![s10 kripto ödeme siteye bağlan success](https://github.com/nidabaser98/BlockchainFoodOrderApp/assets/116282473/15d8b640-4bf9-4624-946a-84a61c5cc50d) |
 | ------------- | ------------- | ------------- | ------------- |
