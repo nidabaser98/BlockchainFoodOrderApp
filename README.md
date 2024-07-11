@@ -1,6 +1,8 @@
 # BlockchainFoodOrderApp
 
-[Presentation PDF](https://github.com/nidabaser98/BlockchainFoodOrderApp/blob/master/Presentation.pdf)
+Presentation: [PDF](https://github.com/nidabaser98/BlockchainFoodOrderApp/blob/master/Presentation.pdf)
+
+Technical Presentation: [Thesis Defense](https://github.com/nidabaser/BlockchainFoodOrderApp/blob/master/Technical%20Presentation.pdf)
 
 Screen Video Record:
 
