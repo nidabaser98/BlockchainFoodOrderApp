@@ -1,6 +1,8 @@
 # BlockchainFoodOrderApp
 
-Screen video record
+[Presentation PDF](https://github.com/nidabaser98/BlockchainFoodOrderApp/blob/master/Presentation.pdf)
+
+Screen Video Record:
 
 https://github.com/nidabaser98/BlockchainFoodOrderApp/assets/97883562/71745fa7-cebd-4421-8d23-28a735d94a81
 
